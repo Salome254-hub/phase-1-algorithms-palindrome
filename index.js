@@ -1,9 +1,25 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  const checkWord=Array.from(word.toLowerCase())
+  let lastLetter=checkWord.length-1
+  for(let i=0;i<checkWord.length;i++){
+    if(checkWord[i]===checkWord[lastLetter]){
+      return true
+    }
+    else{
+      return false
+      
+    }
+    lastLetter--
+  }
+
 }
 
 /* 
   Add your pseudocode here
+  The function should be comparing the letters 
+  from the beginning, being compared to the last
+  and so forth
 */
 
 /*
